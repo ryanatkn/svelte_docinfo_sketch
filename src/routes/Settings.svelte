@@ -1,7 +1,7 @@
-<!-- <script lang="ts">
+<script lang="ts">
 	import Color_Scheme_Input from '@ryanatkn/fuz/Color_Scheme_Input.svelte';
 	import Theme_Input from '@ryanatkn/fuz/Theme_Input.svelte';
-</script> -->
+</script>
 
 <div class="p_xl box">
 	<h1 class="mb_0">Settings</h1>
