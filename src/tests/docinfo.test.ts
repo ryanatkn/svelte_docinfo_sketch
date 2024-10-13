@@ -5,9 +5,18 @@ import {format_file} from '@ryanatkn/gro/format_file.js';
 
 import {parse_docinfo} from '../lib/docinfo.js';
 
-// TODO extract to `test_helpers.ts`? where
+// TODO extract to `@ryanatkn/zzz/test_helpers.ts`
 const write_json = async (path: string, data: unknown): Promise<void> => {
 	writeFileSync(path, await format_file(JSON.stringify(data), {parser: 'json'}), 'utf8');
+};
+// TODO schema parsing
+const read_json = <T>(path: string): T | null => {
+	const contents = readFileSync(path, 'utf8');
+	try {
+		return JSON.parse(contents);
+	} catch (_err) {
+		return null;
+	}
 };
 
 // const update_expected = true; // TODO @many CLI arg
@@ -43,9 +52,7 @@ const run_sample_test = (sample: Test_Sample) => {
 		// TODO @many CLI arg
 		// if (update_expected) await write_json(`./src/tests/samples/${sample.name}/expected.json`, docinfo); // prettier-ignore
 
-		const expected = JSON.parse(
-			readFileSync(`./src/tests/samples/${sample.name}/expected.json`, 'utf8'),
-		);
+		const expected = read_json(`./src/tests/samples/${sample.name}/expected.json`);
 
 		assert.equal(docinfo, expected);
 	});
