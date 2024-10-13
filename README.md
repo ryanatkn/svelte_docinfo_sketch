@@ -17,10 +17,9 @@ There's one module, [`$lib/docinfo.ts`](./src/lib/docinfo.ts).
 To get the metadata from a thing:
 
 ```ts
-import {parse_docinfo, ast_to_docinfo} from '$lib/docinfo.js;';
-import some_component_contents from '$routes/+layout.svelte?raw';
+import {parse_docinfo} from '$lib/docinfo.js;';
 
-const parsed = parse_docinfo(`
+const docinfo = parse_docinfo(`
 <script lang="ts">
 	const {
 		some_simple_prop,
@@ -51,6 +50,12 @@ const parsed = parse_docinfo(`
 	"generics": null
 }
 */
+
+import some_component_contents from '$routes/+layout.svelte?raw';
+const docinfo = parse_docinfo(some_component_contents);
+
+import {ast_to_docinfo} from '$lib/docinfo.js;';
+const docinfo = ast_to_docinfo(some_modern_svelte_ast, some_component_contents);
 ```
 
 Tests at [`$tests/docinfo.ts`](./src/tests/docinfo.test.ts)
