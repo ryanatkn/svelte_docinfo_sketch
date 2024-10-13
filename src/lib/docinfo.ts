@@ -1,5 +1,4 @@
-import {parse, type AST} from 'svelte/compiler';
-import type {ParserOptions} from 'svelte/types/compiler/interfaces';
+import {parse, type AST, type ParserOptions} from 'svelte/compiler';
 import {walk, type Visitors} from 'zimmerframe';
 
 // TODO types are bad, so many any
@@ -30,7 +29,10 @@ export interface Docinfo_Export {
 	// type: string; // TODO infer with ts-morph? something else? is lossy to parse from the AST
 }
 
-export const parse_docinfo = (contents: string, parse_options?: ParserOptions): Parsed_Docinfo => {
+export const parse_docinfo = (
+	contents: string,
+	parse_options?: Parameters<typeof parse>[1],
+): Parsed_Docinfo => {
 	const ast = parse(contents, {...parse_options, modern: true});
 	return {docinfo: ast_to_docinfo(ast, contents), ast};
 };
