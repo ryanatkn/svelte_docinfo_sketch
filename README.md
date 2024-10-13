@@ -12,7 +12,7 @@ and probably SvelteKit soon. It might get opinionated.
 
 ## Usage
 
-There's one module, [$lib/docinfo.ts](./src/lib/docinfo.ts).
+There's one module, [`$lib/docinfo.ts`](./src/lib/docinfo.ts).
 
 To get the metadata from a thing:
 
@@ -53,8 +53,8 @@ const parsed = parse_docinfo(`
 */
 ```
 
-Tests at [$tests/docinfo.ts](./src/tests/docinfo.test.ts)
-and [$tests/samples](./src/tests/samples).
+Tests at [`$tests/docinfo.ts`](./src/tests/docinfo.test.ts)
+and [`$tests/samples`](./src/tests/samples).
 
 ```ts
 // $lib/docinfo.ts
