@@ -1,4 +1,4 @@
-import {parse, type AST, type ParserOptions} from 'svelte/compiler';
+import {parse, type AST} from 'svelte/compiler';
 import {walk, type Visitors} from 'zimmerframe';
 
 // TODO types are bad, so many any
