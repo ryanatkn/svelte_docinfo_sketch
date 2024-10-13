@@ -10,6 +10,7 @@ const write_json = async (path: string, data: unknown): Promise<void> => {
 	writeFileSync(path, await format_file(JSON.stringify(data), {parser: 'json'}), 'utf8');
 };
 // TODO schema parsing
+// TODO maybe return null for missing files, or result with typed error data
 const read_json = <T>(path: string): T | null => {
 	const contents = readFileSync(path, 'utf8');
 	try {
