@@ -112,4 +112,4 @@ npx gro run src/tests/print_parsed.ts
 
 ## License
 
-[Unlicense](license) (public domain)
+[Unlicense](license) ⚘ public domain
