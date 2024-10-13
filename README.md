@@ -11,7 +11,8 @@ but [supporting Svelte 5](https://github.com/carbon-design-system/sveld/issues/1
 and probably SvelteKit soon. It might get opinionated.
 
 Uses [`zimmerframe`](https://github.com/rich-harris/zimmerframe) for AST walking
-and Svelte's [`parse`](https://github.com/sveltejs/svelte/blob/6534f507ce0a39b50b851d67868a1716cca6efae/packages/svelte/src/compiler/index.js#L105).
+and Svelte's [`parse`](https://github.com/sveltejs/svelte/blob/6534f507ce0a39b50b851d67868a1716cca6efae/packages/svelte/src/compiler/index.js#L105)
+with `{modern: true}`.
 
 ## Usage
 
