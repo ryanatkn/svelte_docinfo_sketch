@@ -10,6 +10,8 @@ It's like [Sveld](https://github.com/carbon-design-system/sveld)
 but [supporting Svelte 5](https://github.com/carbon-design-system/sveld/issues/128),
 and probably SvelteKit soon. It might get opinionated.
 
+Uses [`zimmerframe`](https://github.com/rich-harris/zimmerframe) for AST walking.
+
 ## Usage
 
 There's one module, [`$lib/docinfo.ts`](./src/lib/docinfo.ts).
