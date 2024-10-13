@@ -14,7 +14,7 @@ and probably SvelteKit soon. It might get opinionated.
 
 There's one module, [`$lib/docinfo.ts`](./src/lib/docinfo.ts).
 
-To get the metadata from a thing:
+To get the metadata from a component:
 
 ```ts
 import {parse_docinfo} from '$lib/docinfo.js;';
