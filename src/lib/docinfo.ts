@@ -129,7 +129,7 @@ export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 		},
 	};
 
-	walk(parsed, {}, visitors);
+	walk(ast, {}, visitors);
 
 	const props: Docinfo_Prop[] = Array.from(interface_props.entries()).map(
 		([prop_name, prop_info]) => {
