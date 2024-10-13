@@ -20,9 +20,10 @@ To get the metadata from a thing:
 import {parse_docinfo} from '$lib/docinfo.js;';
 
 const docinfo = parse_docinfo(`
-<script lang="ts">
+<script lang="ts" generics="T, U extends string">
 	const {
 		some_simple_prop,
+		some_bindable_prop = $bindable('fallback'),
 	}: {
 		/**
 		 * comments
@@ -30,8 +31,11 @@ const docinfo = parse_docinfo(`
 		 *
 		 * etc
 		 */
-		some_simple_prop: boolean;
+		some_simple_prop: T;
+		some_bindable_prop?: U;
 	} = $props();
+
+  export const exported = 'TODO infer type for exports';
 </script>
 `);
 /*
@@ -40,14 +44,22 @@ const docinfo = parse_docinfo(`
 		{
 			"name": "some_simple_prop",
 			"comment": ["comments go here", "etc"],
-			"type": "boolean",
+			"type": "T",
 			"optional": false,
 			"bindable": false,
 			"default": null
+		},
+		{
+			"name": "some_bindable_prop",
+			"comment": null,
+			"type": "U",
+			"optional": true,
+			"bindable": true,
+			"default": "'fallback'"
 		}
 	],
-	"exports": [],
-	"generics": null
+	"exports": [{"name": "exported", "comment": null}],
+	"generics": "T, U extends string"
 }
 */
 
