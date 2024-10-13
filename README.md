@@ -107,8 +107,8 @@ npx gro run src/tests/print_parsed.ts
 
 - inferred exports types (ts-morph?)
 - support metadata extraction from `.svelte.ts` files
-- probably other things, please open issues/PRs/discussions
 - probably expand scope to SvelteKit projects
+- probably other things, please open issues/PRs/discussions
 
 ## License
 
