@@ -247,8 +247,8 @@ const parse_jsdoc_comment = (comment: string): string[] => {
 
 				// Determine the number of '\n's to insert based on blank_line_count
 				// For n blank lines, insert (n - 1) '\n's
-				const numNewlines = blank_line_count > 1 ? blank_line_count - 1 : 0;
-				for (let i = 0; i < numNewlines; i++) {
+				const num_newlines = blank_line_count > 1 ? blank_line_count - 1 : 0;
+				for (let i = 0; i < num_newlines; i++) {
 					result.push('\n');
 				}
 
