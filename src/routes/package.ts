@@ -45,6 +45,7 @@ export const package_json = {
 		typescript: '^5.6.3',
 		'typescript-eslint': '^8.8.1',
 		uvu: '^0.5.6',
+		zimmerframe: '^1.1.2',
 	},
 	prettier: {
 		plugins: ['prettier-plugin-svelte'],
