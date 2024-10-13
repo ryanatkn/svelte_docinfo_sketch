@@ -61,7 +61,7 @@ and [`$tests/samples`](./src/tests/samples).
 
 export const parse_docinfo: (contents: string) => Parsed_Docinfo;
 
-export const ast_to_docinfo: (parsed: AST.Root, contents: string) => Docinfo;
+export const ast_to_docinfo: (ast: AST.Root, contents: string) => Docinfo;
 
 export interface Parsed_Docinfo {
 	docinfo: Docinfo;

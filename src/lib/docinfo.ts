@@ -34,7 +34,7 @@ export const parse_docinfo = (contents: string): Parsed_Docinfo => {
 	return {docinfo: ast_to_docinfo(ast, contents), ast};
 };
 
-export const ast_to_docinfo = (parsed: AST.Root, contents: string): Docinfo => {
+export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 	const interface_props: Map<string, {type: string; comment: null | string[]; optional: boolean}> =
 		new Map();
 	const defaults: Map<string, {bindable: boolean; default: string | null}> = new Map();
