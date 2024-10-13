@@ -70,7 +70,7 @@ import {ast_to_docinfo} from '$lib/docinfo.js;';
 const docinfo = ast_to_docinfo(some_modern_svelte_ast, some_component_contents);
 ```
 
-Tests at [`$tests/docinfo.ts`](./src/tests/docinfo.test.ts)
+Tests at [`$tests/docinfo.test.ts`](./src/tests/docinfo.test.ts)
 and [`$tests/samples`](./src/tests/samples).
 
 ```ts
