@@ -131,20 +131,18 @@ export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 
 	walk(ast, {}, visitors);
 
-	const props: Docinfo_Prop[] = Array.from(interface_props.entries()).map(
-		([prop_name, prop_info]) => {
-			const default_info = defaults.get(prop_name);
+	const props: Docinfo_Prop[] = Array.from(interface_props.entries()).map(([name, prop_info]) => {
+		const default_info = defaults.get(name);
 
-			return {
-				name: prop_name,
-				comment: prop_info.comment,
-				type: prop_info.type,
-				optional: prop_info.optional,
-				bindable: default_info ? default_info.bindable : false,
-				default: default_info ? default_info.default : null,
-			};
-		},
-	);
+		return {
+			name,
+			comment: prop_info.comment,
+			type: prop_info.type,
+			optional: prop_info.optional,
+			bindable: default_info ? default_info.bindable : false,
+			default: default_info ? default_info.default : null,
+		};
+	});
 
 	return {props, exports, generics};
 };
