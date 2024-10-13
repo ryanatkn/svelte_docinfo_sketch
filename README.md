@@ -3,7 +3,7 @@
 > a sketch of a module for extracting metadata from Svelte components
 
 This repo is for experimenting. It's not maintained software and it's not published to npm.
-Please use it however, it's public domain.
+Please use it however you'd like, it's public domain.
 Contributions are welcome, issues/PRs/discussions.
 
 It's like [Sveld](https://github.com/carbon-design-system/sveld)
