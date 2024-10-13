@@ -31,7 +31,7 @@ export interface Docinfo_Export {
 
 export const parse_docinfo = (
 	contents: string,
-	parse_options?: Parameters<typeof parse>[1],
+	parse_options?: Parameters<typeof parse>[1], // forces `modern: true`
 ): Parsed_Docinfo => {
 	const ast = parse(contents, {...parse_options, modern: true});
 	return {docinfo: ast_to_docinfo(ast, contents), ast};

@@ -80,8 +80,10 @@ and [`$tests/samples`](./src/tests/samples).
 ```ts
 // $lib/docinfo.ts
 
-export const parse_docinfo = (contents: string, parse_options?: Parameters<typeof parse>[1]) =>
-	Parsed_Docinfo; // forces `modern: true`
+export const parse_docinfo = (
+	contents: string,
+	parse_options?: Parameters<typeof parse>[1], // forces `modern: true`
+) => Parsed_Docinfo;
 
 export const ast_to_docinfo: (ast: AST.Root, contents: string) => Docinfo;
 
