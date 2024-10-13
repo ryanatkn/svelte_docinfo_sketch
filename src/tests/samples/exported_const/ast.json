@@ -1,0 +1,252 @@
+{
+	"css": null,
+	"js": [],
+	"start": 123,
+	"end": 121,
+	"type": "Root",
+	"fragment": {
+		"type": "Fragment",
+		"nodes": [{"type": "Text", "start": 121, "end": 123, "raw": "\n\n", "data": "\n\n"}]
+	},
+	"options": null,
+	"module": {
+		"type": "Script",
+		"start": 0,
+		"end": 121,
+		"context": "module",
+		"content": {
+			"type": "Program",
+			"start": 25,
+			"end": 112,
+			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 3, "column": 0}},
+			"body": [
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 27,
+					"end": 111,
+					"loc": {"start": {"line": 2, "column": 1}, "end": {"line": 2, "column": 85}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "VariableDeclaration",
+						"start": 34,
+						"end": 111,
+						"loc": {"start": {"line": 2, "column": 8}, "end": {"line": 2, "column": 85}},
+						"declarations": [
+							{
+								"type": "VariableDeclarator",
+								"start": 40,
+								"end": 110,
+								"loc": {"start": {"line": 2, "column": 14}, "end": {"line": 2, "column": 84}},
+								"id": {
+									"type": "Identifier",
+									"start": 40,
+									"end": 77,
+									"loc": {"start": {"line": 2, "column": 14}, "end": {"line": 2, "column": 51}},
+									"name": "some_exported_const_in_module_context"
+								},
+								"init": {
+									"type": "ArrowFunctionExpression",
+									"start": 80,
+									"end": 110,
+									"loc": {"start": {"line": 2, "column": 54}, "end": {"line": 2, "column": 84}},
+									"returnType": {
+										"type": "TSTypeAnnotation",
+										"start": 92,
+										"end": 100,
+										"loc": {"start": {"line": 2, "column": 66}, "end": {"line": 2, "column": 74}},
+										"typeAnnotation": {
+											"type": "TSStringKeyword",
+											"start": 94,
+											"end": 100,
+											"loc": {"start": {"line": 2, "column": 68}, "end": {"line": 2, "column": 74}}
+										}
+									},
+									"id": null,
+									"expression": true,
+									"generator": false,
+									"async": false,
+									"params": [
+										{
+											"type": "Identifier",
+											"start": 81,
+											"end": 82,
+											"loc": {"start": {"line": 2, "column": 55}, "end": {"line": 2, "column": 65}},
+											"name": "v",
+											"typeAnnotation": {
+												"type": "TSTypeAnnotation",
+												"start": 82,
+												"end": 91,
+												"loc": {
+													"start": {"line": 2, "column": 56},
+													"end": {"line": 2, "column": 65}
+												},
+												"typeAnnotation": {
+													"type": "TSBooleanKeyword",
+													"start": 84,
+													"end": 91,
+													"loc": {
+														"start": {"line": 2, "column": 58},
+														"end": {"line": 2, "column": 65}
+													}
+												}
+											}
+										}
+									],
+									"body": {
+										"type": "BinaryExpression",
+										"start": 104,
+										"end": 110,
+										"loc": {"start": {"line": 2, "column": 78}, "end": {"line": 2, "column": 84}},
+										"left": {
+											"type": "Identifier",
+											"start": 104,
+											"end": 105,
+											"loc": {"start": {"line": 2, "column": 78}, "end": {"line": 2, "column": 79}},
+											"name": "v"
+										},
+										"operator": "+",
+										"right": {
+											"type": "Literal",
+											"start": 108,
+											"end": 110,
+											"loc": {"start": {"line": 2, "column": 82}, "end": {"line": 2, "column": 84}},
+											"value": "",
+											"raw": "''"
+										}
+									}
+								}
+							}
+						],
+						"kind": "const"
+					},
+					"specifiers": [],
+					"source": null
+				}
+			],
+			"sourceType": "module"
+		},
+		"attributes": [
+			{
+				"type": "Attribute",
+				"start": 8,
+				"end": 17,
+				"name": "lang",
+				"value": [{"start": 14, "end": 16, "type": "Text", "raw": "ts", "data": "ts"}]
+			},
+			{"type": "Attribute", "start": 18, "end": 24, "name": "module", "value": true}
+		]
+	},
+	"instance": {
+		"type": "Script",
+		"start": 123,
+		"end": 325,
+		"context": "default",
+		"content": {
+			"type": "Program",
+			"start": 141,
+			"end": 316,
+			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 13, "column": 0}},
+			"body": [
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 171,
+					"end": 208,
+					"loc": {"start": {"line": 7, "column": 1}, "end": {"line": 7, "column": 38}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "VariableDeclaration",
+						"start": 178,
+						"end": 208,
+						"loc": {"start": {"line": 7, "column": 8}, "end": {"line": 7, "column": 38}},
+						"declarations": [
+							{
+								"type": "VariableDeclarator",
+								"start": 184,
+								"end": 207,
+								"loc": {"start": {"line": 7, "column": 14}, "end": {"line": 7, "column": 37}},
+								"id": {
+									"type": "Identifier",
+									"start": 184,
+									"end": 203,
+									"loc": {"start": {"line": 7, "column": 14}, "end": {"line": 7, "column": 33}},
+									"name": "some_exported_const"
+								},
+								"init": {
+									"type": "Literal",
+									"start": 206,
+									"end": 207,
+									"loc": {"start": {"line": 7, "column": 36}, "end": {"line": 7, "column": 37}},
+									"value": 0,
+									"raw": "0"
+								}
+							}
+						],
+						"kind": "const"
+					},
+					"specifiers": [],
+					"source": null,
+					"leadingComments": [
+						{"type": "Line", "value": " this comment is ignored", "start": 143, "end": 169}
+					]
+				},
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 264,
+					"end": 315,
+					"loc": {"start": {"line": 12, "column": 1}, "end": {"line": 12, "column": 52}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "VariableDeclaration",
+						"start": 271,
+						"end": 315,
+						"loc": {"start": {"line": 12, "column": 8}, "end": {"line": 12, "column": 52}},
+						"declarations": [
+							{
+								"type": "VariableDeclarator",
+								"start": 277,
+								"end": 314,
+								"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 51}},
+								"id": {
+									"type": "Identifier",
+									"start": 277,
+									"end": 309,
+									"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 46}},
+									"name": "some_exported_const_with_comment"
+								},
+								"init": {
+									"type": "Literal",
+									"start": 312,
+									"end": 314,
+									"loc": {"start": {"line": 12, "column": 49}, "end": {"line": 12, "column": 51}},
+									"value": "",
+									"raw": "''"
+								}
+							}
+						],
+						"kind": "const"
+					},
+					"specifiers": [],
+					"source": null,
+					"leadingComments": [
+						{
+							"type": "Block",
+							"value": "*\n * this is a doc comment that gets parsed\n ",
+							"start": 211,
+							"end": 262
+						}
+					]
+				}
+			],
+			"sourceType": "module"
+		},
+		"attributes": [
+			{
+				"type": "Attribute",
+				"start": 131,
+				"end": 140,
+				"name": "lang",
+				"value": [{"start": 137, "end": 139, "type": "Text", "raw": "ts", "data": "ts"}]
+			}
+		]
+	}
+}

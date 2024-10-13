@@ -1,0 +1,14 @@
+{
+	"props": [
+		{
+			"name": "some_simple_prop",
+			"comment": ["comments go here", "etc"],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		}
+	],
+	"exports": [],
+	"generics": null
+}

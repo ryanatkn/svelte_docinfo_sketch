@@ -1,0 +1,86 @@
+{
+	"props": [
+		{
+			"name": "some_normal_prop",
+			"comment": null,
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_literal_prop",
+			"comment": null,
+			"type": "'a string literal'",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_optional_prop",
+			"comment": null,
+			"type": "number",
+			"optional": true,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_optional_prop_with_default",
+			"comment": null,
+			"type": "number",
+			"optional": true,
+			"bindable": false,
+			"default": "1"
+		},
+		{
+			"name": "some_optional_bindable_prop",
+			"comment": null,
+			"type": "unknown[]",
+			"optional": true,
+			"bindable": true,
+			"default": "[]"
+		},
+		{
+			"name": "some_object_literal_prop",
+			"comment": null,
+			"type": "{a: number; b: string}",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_tuple_literal_prop",
+			"comment": null,
+			"type": "[c: number, d: string]",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_class_prop",
+			"comment": null,
+			"type": "Set<string>",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_commented_prop",
+			"comment": ["Some prop comment.", "@hi lol"],
+			"type": "Map<string, Date>",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_snippet_prop",
+			"comment": null,
+			"type": "Snippet",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		}
+	],
+	"exports": [],
+	"generics": null
+}

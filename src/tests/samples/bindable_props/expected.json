@@ -1,0 +1,38 @@
+{
+	"props": [
+		{
+			"name": "some_required_prop_with_default",
+			"comment": null,
+			"type": "number",
+			"optional": false,
+			"bindable": false,
+			"default": "1"
+		},
+		{
+			"name": "some_optional_prop_with_default",
+			"comment": null,
+			"type": "number",
+			"optional": true,
+			"bindable": false,
+			"default": "1"
+		},
+		{
+			"name": "some_optional_bindable_prop_without_default",
+			"comment": null,
+			"type": "string",
+			"optional": true,
+			"bindable": true,
+			"default": null
+		},
+		{
+			"name": "some_optional_bindable_prop_with_default",
+			"comment": null,
+			"type": "string[]",
+			"optional": true,
+			"bindable": true,
+			"default": "[]"
+		}
+	],
+	"exports": [],
+	"generics": null
+}

@@ -1,0 +1,22 @@
+{
+	"props": [
+		{
+			"name": "some_normal_prop",
+			"comment": null,
+			"type": "Set<T>",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_other_prop",
+			"comment": null,
+			"type": "Set<U>",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		}
+	],
+	"exports": [],
+	"generics": "T, U"
+}

@@ -1,0 +1,85 @@
+{
+	"props": [
+		{
+			"name": "some_commented_prop",
+			"comment": ["Some prop comment.", "@hi lol"],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_prop_with_no_comment",
+			"comment": null,
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_comment_with_preserved_newlines",
+			"comment": ["Some comment with preserved newlines.", "\n", "preserved newline above"],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_comment_with_two_preserved_newlines",
+			"comment": [
+				"Some comment with 2 preserved newlines.",
+				"\n",
+				"\n",
+				"2 preserved newline above"
+			],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_comment_with_many_preserved_newlines",
+			"comment": [
+				"Some comment with many preserved newlines.",
+				"\n",
+				"\n",
+				"2 preserved newlines above",
+				"\n",
+				"\n",
+				"\n",
+				"\n",
+				"4 preserved newlines above"
+			],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_comment_on_a_single_line",
+			"comment": ["Some doc comment on a single line"],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "still_has_comment",
+			"comment": ["Some comment followed by a `// comment` but not ignored."],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "uses_closest_comment",
+			"comment": ["Uses closest jsdoc comment."],
+			"type": "boolean",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		}
+	],
+	"exports": [],
+	"generics": null
+}

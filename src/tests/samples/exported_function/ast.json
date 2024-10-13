@@ -1,0 +1,286 @@
+{
+	"css": null,
+	"js": [],
+	"start": 137,
+	"end": 135,
+	"type": "Root",
+	"fragment": {
+		"type": "Fragment",
+		"nodes": [{"type": "Text", "start": 135, "end": 137, "raw": "\n\n", "data": "\n\n"}]
+	},
+	"options": null,
+	"module": {
+		"type": "Script",
+		"start": 0,
+		"end": 135,
+		"context": "module",
+		"content": {
+			"type": "Program",
+			"start": 25,
+			"end": 126,
+			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 5, "column": 0}},
+			"body": [
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 27,
+					"end": 125,
+					"loc": {"start": {"line": 2, "column": 1}, "end": {"line": 4, "column": 2}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "FunctionDeclaration",
+						"start": 34,
+						"end": 125,
+						"loc": {"start": {"line": 2, "column": 8}, "end": {"line": 4, "column": 2}},
+						"id": {
+							"type": "Identifier",
+							"start": 43,
+							"end": 83,
+							"loc": {"start": {"line": 2, "column": 17}, "end": {"line": 2, "column": 57}},
+							"name": "some_exported_function_in_module_context"
+						},
+						"expression": false,
+						"generator": false,
+						"async": false,
+						"params": [
+							{
+								"type": "Identifier",
+								"start": 84,
+								"end": 85,
+								"loc": {"start": {"line": 2, "column": 58}, "end": {"line": 2, "column": 68}},
+								"name": "v",
+								"typeAnnotation": {
+									"type": "TSTypeAnnotation",
+									"start": 85,
+									"end": 94,
+									"loc": {"start": {"line": 2, "column": 59}, "end": {"line": 2, "column": 68}},
+									"typeAnnotation": {
+										"type": "TSBooleanKeyword",
+										"start": 87,
+										"end": 94,
+										"loc": {"start": {"line": 2, "column": 61}, "end": {"line": 2, "column": 68}}
+									}
+								}
+							}
+						],
+						"returnType": {
+							"type": "TSTypeAnnotation",
+							"start": 95,
+							"end": 103,
+							"loc": {"start": {"line": 2, "column": 69}, "end": {"line": 2, "column": 77}},
+							"typeAnnotation": {
+								"type": "TSStringKeyword",
+								"start": 97,
+								"end": 103,
+								"loc": {"start": {"line": 2, "column": 71}, "end": {"line": 2, "column": 77}}
+							}
+						},
+						"body": {
+							"type": "BlockStatement",
+							"start": 104,
+							"end": 125,
+							"loc": {"start": {"line": 2, "column": 78}, "end": {"line": 4, "column": 2}},
+							"body": [
+								{
+									"type": "ReturnStatement",
+									"start": 108,
+									"end": 122,
+									"loc": {"start": {"line": 3, "column": 2}, "end": {"line": 3, "column": 16}},
+									"argument": {
+										"type": "BinaryExpression",
+										"start": 115,
+										"end": 121,
+										"loc": {"start": {"line": 3, "column": 9}, "end": {"line": 3, "column": 15}},
+										"left": {
+											"type": "Identifier",
+											"start": 115,
+											"end": 116,
+											"loc": {"start": {"line": 3, "column": 9}, "end": {"line": 3, "column": 10}},
+											"name": "v"
+										},
+										"operator": "+",
+										"right": {
+											"type": "Literal",
+											"start": 119,
+											"end": 121,
+											"loc": {"start": {"line": 3, "column": 13}, "end": {"line": 3, "column": 15}},
+											"value": "",
+											"raw": "''"
+										}
+									}
+								}
+							]
+						}
+					},
+					"specifiers": [],
+					"source": null
+				}
+			],
+			"sourceType": "module"
+		},
+		"attributes": [
+			{
+				"type": "Attribute",
+				"start": 8,
+				"end": 17,
+				"name": "lang",
+				"value": [{"start": 14, "end": 16, "type": "Text", "raw": "ts", "data": "ts"}]
+			},
+			{"type": "Attribute", "start": 18, "end": 24, "name": "module", "value": true}
+		]
+	},
+	"instance": {
+		"type": "Script",
+		"start": 137,
+		"end": 395,
+		"context": "default",
+		"content": {
+			"type": "Program",
+			"start": 155,
+			"end": 386,
+			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 19, "column": 0}},
+			"body": [
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 185,
+					"end": 250,
+					"loc": {"start": {"line": 9, "column": 1}, "end": {"line": 11, "column": 2}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "FunctionDeclaration",
+						"start": 192,
+						"end": 250,
+						"loc": {"start": {"line": 9, "column": 8}, "end": {"line": 11, "column": 2}},
+						"id": {
+							"type": "Identifier",
+							"start": 201,
+							"end": 223,
+							"loc": {"start": {"line": 9, "column": 17}, "end": {"line": 9, "column": 39}},
+							"name": "some_exported_function"
+						},
+						"expression": false,
+						"generator": false,
+						"async": false,
+						"params": [],
+						"returnType": {
+							"type": "TSTypeAnnotation",
+							"start": 225,
+							"end": 233,
+							"loc": {"start": {"line": 9, "column": 41}, "end": {"line": 9, "column": 49}},
+							"typeAnnotation": {
+								"type": "TSNumberKeyword",
+								"start": 227,
+								"end": 233,
+								"loc": {"start": {"line": 9, "column": 43}, "end": {"line": 9, "column": 49}}
+							}
+						},
+						"body": {
+							"type": "BlockStatement",
+							"start": 234,
+							"end": 250,
+							"loc": {"start": {"line": 9, "column": 50}, "end": {"line": 11, "column": 2}},
+							"body": [
+								{
+									"type": "ReturnStatement",
+									"start": 238,
+									"end": 247,
+									"loc": {"start": {"line": 10, "column": 2}, "end": {"line": 10, "column": 11}},
+									"argument": {
+										"type": "Literal",
+										"start": 245,
+										"end": 246,
+										"loc": {"start": {"line": 10, "column": 9}, "end": {"line": 10, "column": 10}},
+										"value": 0,
+										"raw": "0"
+									}
+								}
+							]
+						}
+					},
+					"specifiers": [],
+					"source": null,
+					"leadingComments": [
+						{"type": "Line", "value": " this comment is ignored", "start": 157, "end": 183}
+					]
+				},
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 306,
+					"end": 385,
+					"loc": {"start": {"line": 16, "column": 1}, "end": {"line": 18, "column": 2}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "FunctionDeclaration",
+						"start": 313,
+						"end": 385,
+						"loc": {"start": {"line": 16, "column": 8}, "end": {"line": 18, "column": 2}},
+						"id": {
+							"type": "Identifier",
+							"start": 322,
+							"end": 357,
+							"loc": {"start": {"line": 16, "column": 17}, "end": {"line": 16, "column": 52}},
+							"name": "some_exported_function_with_comment"
+						},
+						"expression": false,
+						"generator": false,
+						"async": false,
+						"params": [],
+						"returnType": {
+							"type": "TSTypeAnnotation",
+							"start": 359,
+							"end": 367,
+							"loc": {"start": {"line": 16, "column": 54}, "end": {"line": 16, "column": 62}},
+							"typeAnnotation": {
+								"type": "TSStringKeyword",
+								"start": 361,
+								"end": 367,
+								"loc": {"start": {"line": 16, "column": 56}, "end": {"line": 16, "column": 62}}
+							}
+						},
+						"body": {
+							"type": "BlockStatement",
+							"start": 368,
+							"end": 385,
+							"loc": {"start": {"line": 16, "column": 63}, "end": {"line": 18, "column": 2}},
+							"body": [
+								{
+									"type": "ReturnStatement",
+									"start": 372,
+									"end": 382,
+									"loc": {"start": {"line": 17, "column": 2}, "end": {"line": 17, "column": 12}},
+									"argument": {
+										"type": "Literal",
+										"start": 379,
+										"end": 381,
+										"loc": {"start": {"line": 17, "column": 9}, "end": {"line": 17, "column": 11}},
+										"value": "",
+										"raw": "''"
+									}
+								}
+							]
+						}
+					},
+					"specifiers": [],
+					"source": null,
+					"leadingComments": [
+						{
+							"type": "Block",
+							"value": "*\n * this is a doc comment that gets parsed\n ",
+							"start": 253,
+							"end": 304
+						}
+					]
+				}
+			],
+			"sourceType": "module"
+		},
+		"attributes": [
+			{
+				"type": "Attribute",
+				"start": 145,
+				"end": 154,
+				"name": "lang",
+				"value": [{"start": 151, "end": 153, "type": "Text", "raw": "ts", "data": "ts"}]
+			}
+		]
+	}
+}
