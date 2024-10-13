@@ -26,7 +26,7 @@ export interface Docinfo_Prop {
 export interface Docinfo_Export {
 	name: string;
 	comment: string[] | null;
-	// type: string; // TODO infer with tsmorph? something else? is lossy to parse from the AST
+	// type: string; // TODO infer with ts-morph? something else? is lossy to parse from the AST
 }
 
 export const parse_docinfo = (contents: string): Parsed_Docinfo => {
