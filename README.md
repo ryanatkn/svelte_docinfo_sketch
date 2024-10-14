@@ -9,7 +9,7 @@ and probably SvelteKit soon. It might get opinionated.
 Uses [`zimmerframe`](https://github.com/rich-harris/zimmerframe) for AST walking
 and Svelte's [`parse`](https://github.com/sveltejs/svelte/blob/6534f507ce0a39b50b851d67868a1716cca6efae/packages/svelte/src/compiler/index.js#L105)
 with `{modern: true}`.
-Doesn't do inference yet so is somewhat limited, see todos below.
+Doesn't do inference yet so is somewhat limited getting the types of things, see todos below.
 
 This repo is for experimenting. It's not maintained software and it's not published to npm.
 Please use it however you'd like, it's public domain.
