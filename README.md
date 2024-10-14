@@ -104,13 +104,13 @@ export interface Parsed_Docinfo {
 export interface Docinfo {
 	props: Docinfo_Prop[];
 	exports: Docinfo_Export[];
-	generics: string | null; // TODO parse with ts-morph?
+	generics: string | null; // TODO inference?
 }
 
 export interface Docinfo_Prop {
 	name: string;
 	comment: string[] | null;
-	type: string;
+	type: string; // TODO might be enhanced by inference
 	optional: boolean;
 	bindable: boolean;
 	default: null | string;
@@ -119,7 +119,7 @@ export interface Docinfo_Prop {
 export interface Docinfo_Export {
 	name: string;
 	comment: string[] | null;
-	// TODO infer with ts-morph or the Svelte language server? is lossy to parse from the AST
+	// TODO infer with ts-morph or svelte language server? is lossy to parse from the AST
 	// type: string;
 }
 ```
