@@ -9,11 +9,19 @@ and probably SvelteKit soon. It might get opinionated.
 Uses [`zimmerframe`](https://github.com/rich-harris/zimmerframe) for AST walking
 and Svelte's [`parse`](https://github.com/sveltejs/svelte/blob/6534f507ce0a39b50b851d67868a1716cca6efae/packages/svelte/src/compiler/index.js#L105)
 with `{modern: true}`.
-Doesn't do inference yet so is somewhat limited getting the types of things, see todos below.
+Doesn't do inference yet so is somewhat limited getting the types of things.
 
 This repo is for experimenting. It's not maintained software and it's not published to npm.
 Please use it however you'd like, it's public domain.
 Contributions are welcome, issues/PRs/discussions.
+
+## Todo
+
+- inferred exports types (ts-morph?)
+- support metadata extraction from `.svelte.ts` files
+- magical rune detection
+- probably expand scope to SvelteKit projects
+- probably other things, please open issues/PRs/discussions
 
 ## Usage
 
@@ -128,14 +136,6 @@ To see some output in your terminal:
 ```bash
 npx gro run src/tests/print_parsed.ts
 ```
-
-## Todo
-
-- inferred exports types (ts-morph?)
-- support metadata extraction from `.svelte.ts` files
-- magical rune detection
-- probably expand scope to SvelteKit projects
-- probably other things, please open issues/PRs/discussions
 
 ## License
 
