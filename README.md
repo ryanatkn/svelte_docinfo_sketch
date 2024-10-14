@@ -2,17 +2,17 @@
 
 > a sketch of a module for extracting metadata from Svelte components
 
-This repo is for experimenting. It's not maintained software and it's not published to npm.
-Please use it however you'd like, it's public domain.
-Contributions are welcome, issues/PRs/discussions.
-
-It's like [Sveld](https://github.com/carbon-design-system/sveld)
+Like [Sveld](https://github.com/carbon-design-system/sveld)
 but [supporting Svelte 5](https://github.com/carbon-design-system/sveld/issues/128),
 and probably SvelteKit soon. It might get opinionated.
 
 Uses [`zimmerframe`](https://github.com/rich-harris/zimmerframe) for AST walking
 and Svelte's [`parse`](https://github.com/sveltejs/svelte/blob/6534f507ce0a39b50b851d67868a1716cca6efae/packages/svelte/src/compiler/index.js#L105)
 with `{modern: true}`.
+
+This repo is for experimenting. It's not maintained software and it's not published to npm.
+Please use it however you'd like, it's public domain.
+Contributions are welcome, issues/PRs/discussions.
 
 ## Usage
 
