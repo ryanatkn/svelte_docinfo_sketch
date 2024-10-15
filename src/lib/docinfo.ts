@@ -31,7 +31,10 @@ export interface Docinfo_Export {
 
 export const parse_docinfo = (
 	contents: string,
-	parse_options?: Parameters<typeof parse>[1], // forces `modern: true`
+	/**
+	 * Forces `modern: true` in the `parse` options.
+	 */
+	parse_options?: Parameters<typeof parse>[1],
 ): Parsed_Docinfo => {
 	const ast = parse(contents, {...parse_options, modern: true});
 	return {docinfo: ast_to_docinfo(ast, contents), ast};
@@ -40,8 +43,10 @@ export const parse_docinfo = (
 export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 	const interface_props: Map<string, {type: string; comment: null | string[]; optional: boolean}> =
 		new Map();
+
 	const defaults: Map<string, {bindable: boolean; default: string | null}> = new Map();
 	let generics: string | null = null;
+
 	const exports: Docinfo_Export[] = [];
 
 	const visitors: Visitors<any, any> = {
@@ -176,6 +181,7 @@ const add_type_members = (
 	}
 };
 
+// AI slop starts here:
 const parse_leading_comments = (nodes: any[]): string[] | null => {
 	const c = nodes
 		.slice()
