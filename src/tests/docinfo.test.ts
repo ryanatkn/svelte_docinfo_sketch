@@ -5,7 +5,6 @@ import {format_file} from '@ryanatkn/gro/format_file.js';
 
 import {parse_docinfo} from '../lib/docinfo.js';
 
-// TODO extract to `@ryanatkn/zzz/test_helpers.ts`
 const write_json = async (path: string, data: unknown): Promise<void> => {
 	writeFileSync(path, await format_file(JSON.stringify(data), {parser: 'json'}), 'utf8');
 };
