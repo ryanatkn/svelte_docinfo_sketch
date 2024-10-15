@@ -131,7 +131,7 @@ npm i
 npm test
 ```
 
-To see some output in your terminal:
+To see [some output](./src/tests/print_parsed.ts) in your terminal:
 
 ```bash
 npx gro run src/tests/print_parsed.ts
