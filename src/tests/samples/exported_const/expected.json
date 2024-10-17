@@ -1,11 +1,14 @@
 {
 	"props": [],
 	"exports": [
-		{"name": "some_exported_const_in_module_context", "comment": null},
-		{"name": "some_exported_const", "comment": null},
+		{"name": "some_exported_const_in_module_context", "comment": null, "type": null},
+		{"name": "some_exported_const", "comment": null, "type": null},
+		{"name": "some_export_with_type", "comment": null, "type": "Date"},
+		{"name": "some_export_with_complex_type", "comment": null, "type": "'a' | 'b'"},
 		{
 			"name": "some_exported_const_with_comment",
-			"comment": ["this is a doc comment that gets parsed"]
+			"comment": ["this is a doc comment that gets parsed"],
+			"type": null
 		}
 	],
 	"generics": null

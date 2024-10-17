@@ -19,6 +19,8 @@ const some_component_contents = `
 		some_bindable_prop?: U;
 	} = $props();
 
+  export const exported_needs_inference: Date = new Date();
+
   export const exported = 'TODO infer type for exports';
 </script>
 `;
@@ -27,3 +29,33 @@ const parsed = parse_docinfo(some_component_contents);
 
 console.log(`\nparsed`, JSON.stringify(parsed.ast));
 console.log(`\nparsed`, JSON.stringify(parsed.docinfo));
+
+/*
+
+{
+	"props": [
+		{
+			"name": "some_simple_prop",
+			"comment": ["comments go here", "etc"],
+			"type": "T",
+			"optional": false,
+			"bindable": false,
+			"default": null
+		},
+		{
+			"name": "some_bindable_prop",
+			"comment": null,
+			"type": "U",
+			"optional": true,
+			"bindable": true,
+			"default": "'fallback'"
+		}
+	],
+	"exports": [
+		{"name": "export_with_type", "comment": null, "type": "Date"},
+		{"name": "exported", "comment": null, "type": null}
+	],
+	"generics": "T, U extends string"
+}
+
+*/

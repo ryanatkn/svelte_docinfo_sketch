@@ -139,13 +139,13 @@
 	"instance": {
 		"type": "Script",
 		"start": 123,
-		"end": 325,
+		"end": 521,
 		"context": "default",
 		"content": {
 			"type": "Program",
 			"start": 141,
-			"end": 316,
-			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 13, "column": 0}},
+			"end": 512,
+			"loc": {"start": {"line": 1, "column": 0}, "end": {"line": 18, "column": 0}},
 			"body": [
 				{
 					"type": "ExportNamedDeclaration",
@@ -191,33 +191,207 @@
 				},
 				{
 					"type": "ExportNamedDeclaration",
-					"start": 264,
-					"end": 315,
-					"loc": {"start": {"line": 12, "column": 1}, "end": {"line": 12, "column": 52}},
+					"start": 287,
+					"end": 341,
+					"loc": {"start": {"line": 10, "column": 1}, "end": {"line": 10, "column": 55}},
 					"exportKind": "value",
 					"declaration": {
 						"type": "VariableDeclaration",
-						"start": 271,
-						"end": 315,
-						"loc": {"start": {"line": 12, "column": 8}, "end": {"line": 12, "column": 52}},
+						"start": 294,
+						"end": 341,
+						"loc": {"start": {"line": 10, "column": 8}, "end": {"line": 10, "column": 55}},
 						"declarations": [
 							{
 								"type": "VariableDeclarator",
-								"start": 277,
-								"end": 314,
-								"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 51}},
+								"start": 300,
+								"end": 340,
+								"loc": {"start": {"line": 10, "column": 14}, "end": {"line": 10, "column": 54}},
 								"id": {
 									"type": "Identifier",
-									"start": 277,
-									"end": 309,
-									"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 46}},
+									"start": 300,
+									"end": 321,
+									"loc": {"start": {"line": 10, "column": 14}, "end": {"line": 10, "column": 41}},
+									"name": "some_export_with_type",
+									"typeAnnotation": {
+										"type": "TSTypeAnnotation",
+										"start": 321,
+										"end": 327,
+										"loc": {"start": {"line": 10, "column": 35}, "end": {"line": 10, "column": 41}},
+										"typeAnnotation": {
+											"type": "TSTypeReference",
+											"start": 323,
+											"end": 327,
+											"loc": {
+												"start": {"line": 10, "column": 37},
+												"end": {"line": 10, "column": 41}
+											},
+											"typeName": {
+												"type": "Identifier",
+												"start": 323,
+												"end": 327,
+												"loc": {
+													"start": {"line": 10, "column": 37},
+													"end": {"line": 10, "column": 41}
+												},
+												"name": "Date"
+											}
+										}
+									}
+								},
+								"init": {
+									"type": "NewExpression",
+									"start": 330,
+									"end": 340,
+									"loc": {"start": {"line": 10, "column": 44}, "end": {"line": 10, "column": 54}},
+									"callee": {
+										"type": "Identifier",
+										"start": 334,
+										"end": 338,
+										"loc": {"start": {"line": 10, "column": 48}, "end": {"line": 10, "column": 52}},
+										"name": "Date"
+									},
+									"arguments": []
+								}
+							}
+						],
+						"kind": "const"
+					},
+					"specifiers": [],
+					"source": null,
+					"leadingComments": [
+						{
+							"type": "Line",
+							"value": " this is the only way to get types for exports at the moment, see readme",
+							"start": 211,
+							"end": 285
+						}
+					]
+				},
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 344,
+					"end": 404,
+					"loc": {"start": {"line": 12, "column": 1}, "end": {"line": 12, "column": 61}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "VariableDeclaration",
+						"start": 351,
+						"end": 404,
+						"loc": {"start": {"line": 12, "column": 8}, "end": {"line": 12, "column": 61}},
+						"declarations": [
+							{
+								"type": "VariableDeclarator",
+								"start": 357,
+								"end": 403,
+								"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 60}},
+								"id": {
+									"type": "Identifier",
+									"start": 357,
+									"end": 386,
+									"loc": {"start": {"line": 12, "column": 14}, "end": {"line": 12, "column": 54}},
+									"name": "some_export_with_complex_type",
+									"typeAnnotation": {
+										"type": "TSTypeAnnotation",
+										"start": 386,
+										"end": 397,
+										"loc": {"start": {"line": 12, "column": 43}, "end": {"line": 12, "column": 54}},
+										"typeAnnotation": {
+											"type": "TSUnionType",
+											"start": 388,
+											"end": 397,
+											"loc": {
+												"start": {"line": 12, "column": 45},
+												"end": {"line": 12, "column": 54}
+											},
+											"types": [
+												{
+													"type": "TSLiteralType",
+													"start": 388,
+													"end": 391,
+													"loc": {
+														"start": {"line": 12, "column": 45},
+														"end": {"line": 12, "column": 48}
+													},
+													"literal": {
+														"type": "Literal",
+														"start": 388,
+														"end": 391,
+														"loc": {
+															"start": {"line": 12, "column": 45},
+															"end": {"line": 12, "column": 48}
+														},
+														"value": "a",
+														"raw": "'a'"
+													}
+												},
+												{
+													"type": "TSLiteralType",
+													"start": 394,
+													"end": 397,
+													"loc": {
+														"start": {"line": 12, "column": 51},
+														"end": {"line": 12, "column": 54}
+													},
+													"literal": {
+														"type": "Literal",
+														"start": 394,
+														"end": 397,
+														"loc": {
+															"start": {"line": 12, "column": 51},
+															"end": {"line": 12, "column": 54}
+														},
+														"value": "b",
+														"raw": "'b'"
+													}
+												}
+											]
+										}
+									}
+								},
+								"init": {
+									"type": "Literal",
+									"start": 400,
+									"end": 403,
+									"loc": {"start": {"line": 12, "column": 57}, "end": {"line": 12, "column": 60}},
+									"value": "a",
+									"raw": "'a'"
+								}
+							}
+						],
+						"kind": "const"
+					},
+					"specifiers": [],
+					"source": null
+				},
+				{
+					"type": "ExportNamedDeclaration",
+					"start": 460,
+					"end": 511,
+					"loc": {"start": {"line": 17, "column": 1}, "end": {"line": 17, "column": 52}},
+					"exportKind": "value",
+					"declaration": {
+						"type": "VariableDeclaration",
+						"start": 467,
+						"end": 511,
+						"loc": {"start": {"line": 17, "column": 8}, "end": {"line": 17, "column": 52}},
+						"declarations": [
+							{
+								"type": "VariableDeclarator",
+								"start": 473,
+								"end": 510,
+								"loc": {"start": {"line": 17, "column": 14}, "end": {"line": 17, "column": 51}},
+								"id": {
+									"type": "Identifier",
+									"start": 473,
+									"end": 505,
+									"loc": {"start": {"line": 17, "column": 14}, "end": {"line": 17, "column": 46}},
 									"name": "some_exported_const_with_comment"
 								},
 								"init": {
 									"type": "Literal",
-									"start": 312,
-									"end": 314,
-									"loc": {"start": {"line": 12, "column": 49}, "end": {"line": 12, "column": 51}},
+									"start": 508,
+									"end": 510,
+									"loc": {"start": {"line": 17, "column": 49}, "end": {"line": 17, "column": 51}},
 									"value": "",
 									"raw": "''"
 								}
@@ -231,8 +405,8 @@
 						{
 							"type": "Block",
 							"value": "*\n * this is a doc comment that gets parsed\n ",
-							"start": 211,
-							"end": 262
+							"start": 407,
+							"end": 458
 						}
 					]
 				}

@@ -49,7 +49,9 @@ const docinfo = parse_docinfo(`
 		some_bindable_prop?: U;
 	} = $props();
 
-  export const exported = 'TODO infer type for exports';
+	export const export_with_type: Date = new Date();
+
+  export const exported_needs_inference = 'TODO infer type for exports';
 </script>
 `);
 /*
@@ -72,7 +74,10 @@ const docinfo = parse_docinfo(`
 			"default": "'fallback'"
 		}
 	],
-	"exports": [{"name": "exported", "comment": null}],
+	"exports": [
+		{"name": "export_with_type", "comment": null, "type": "Date"},
+		{"name": "exported_needs_inference", "comment": null, "type": null}
+	],
 	"generics": "T, U extends string"
 }
 */

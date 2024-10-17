@@ -26,7 +26,7 @@ export interface Docinfo_Prop {
 export interface Docinfo_Export {
 	name: string;
 	comment: string[] | null;
-	// type: string; // TODO infer with ts-morph or svelte language server? is lossy to parse from the AST
+	type: string | null; // TODO see readme, needs inference
 }
 
 export const parse_docinfo = (
@@ -111,10 +111,22 @@ export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 		},
 		ExportNamedDeclaration(node: any, {next}) {
 			let name: string;
+			let type: string | null = null; // TODO need to use inference, see readme
 
 			// TODO instead of parsing these further, probably use ts-morph for inference?
 			if (node.declaration.type === 'VariableDeclaration') {
-				name = node.declaration.declarations[0].id.name; // TODO what could the other indices be?
+				const id = node.declaration.declarations[0]?.id;
+				if (id) {
+					name = id.name; // TODO what could the other indices be?
+					if (id.typeAnnotation?.typeAnnotation) {
+						type = contents.substring(
+							id.typeAnnotation.typeAnnotation.start,
+							id.typeAnnotation.typeAnnotation.end,
+						);
+					}
+				} else {
+					name = 'unknown'; // might not be needed
+				}
 			} else if (node.declaration.type === 'FunctionDeclaration') {
 				name = node.declaration.id.name;
 			} else {
@@ -124,7 +136,7 @@ export const ast_to_docinfo = (ast: AST.Root, contents: string): Docinfo => {
 
 			const comment = node.leadingComments ? parse_leading_comments(node.leadingComments) : null;
 
-			exports.push({name, comment});
+			exports.push({name, comment, type});
 
 			next();
 		},
