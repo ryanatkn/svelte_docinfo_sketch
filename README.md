@@ -18,7 +18,6 @@ Contributions are welcome, issues/PRs/discussions.
 ## Todo
 
 - inferred exports types (language server?)
-  - could add the export const/function types when available with small additions
 - support metadata extraction from `.svelte.ts` files
 - magical rune detection
 - probably expand scope to SvelteKit projects
