@@ -84,6 +84,8 @@ import {ast_to_docinfo} from '$lib/docinfo.js;';
 const docinfo = ast_to_docinfo(some_modern_svelte_ast, some_component_contents);
 ```
 
+Also supports named props interfaces when defined in the same file, `const {}: Props = $props();`.
+
 Tests at [`$tests/docinfo.test.ts`](./src/tests/docinfo.test.ts)
 and [`$tests/samples`](./src/tests/samples).
 
