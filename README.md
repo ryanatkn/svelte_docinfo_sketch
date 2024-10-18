@@ -126,8 +126,7 @@ export interface Docinfo_Prop {
 export interface Docinfo_Export {
 	name: string;
 	comment: string[] | null;
-	// TODO infer with ts-morph or svelte language server? is lossy to parse from the AST
-	// type: string;
+	type: string | null; // TODO needs inference
 }
 ```
 
